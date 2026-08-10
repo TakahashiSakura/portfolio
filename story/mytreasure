@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Treasure Story — My Raku Apps</title>
+  <meta name="description" content="なぜ、大切な人や推しの記録を残すのか。 制作のきっかけや考えたことを紹介します。">
+  <meta name="theme-color" content="#fff8f6">
+
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="story-page">
+
+  <header class="story-header">
+    <a class="brand" href="../index.html" aria-label="My Raku Apps ホーム">
+      <span class="brand-mark">✦</span>
+      <span>My Raku Apps</span>
+    </a>
+
+    <a class="story-back" href="../index.html#apps">← Appsへ戻る</a>
+  </header>
+
+  <main>
+    <section class="story-hero">
+      <div class="story-kicker">BEHIND THE APP</div>
+      <h1>なぜ、大切な人や推しの記録を残すのか<span>。</span></h1>
+      <p class="story-lead">好きなもの、大切な人との出来事、記念日。散らばってしまう思い出を、自分だけの場所に。</p>
+    </section>
+
+    <div class="story-visual">
+      <div class="story-app-badge">✦</div>
+    </div>
+
+    <div class="story-content">
+
+        <section class="story-chapter">
+          <div class="story-number">01 / THE BEGINNING</div>
+          <div class="story-copy">
+            <h2>好きなものの情報は、いろんな場所にある。</h2>
+            <p>写真、メモ、SNS、カレンダー。大切な記録ほど、気づけば色々な場所に散らばっていました。</p>
+            <p>あとから見返したときに、その人や推しとの思い出がまとまって見える場所が欲しいと思いました。</p>
+          </div>
+        </section>
+
+        <section class="story-chapter">
+          <div class="story-number">02 / THE PROBLEM</div>
+          <div class="story-copy">
+            <h2>記録したいのは、情報だけじゃない。</h2>
+            <p>誕生日や記念日だけでなく、『この日にこんなことがあった』という気持ちも残したい。</p>
+            <ul class="story-points">
+              <li>写真</li>
+              <li>思い出・活動記録</li>
+              <li>誕生日や記念日</li>
+              <li>好きなものの情報</li>
+              <li>あとから見返すためのアーカイブ</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="story-chapter">
+          <div class="story-number">03 / THE IDEA</div>
+          <div class="story-copy">
+            <h2>自分だけの宝箱をつくる。</h2>
+            <p>管理アプリではなく、開いたときに少し嬉しくなる場所にしたい。それがMy Treasureの出発点です。</p>
+          </div>
+        </section>
+
+        <section class="story-chapter">
+          <div class="story-number">04 / DESIGN</div>
+          <div class="story-copy">
+            <h2>かわいいけれど、記録の邪魔をしない。</h2>
+            <p>写真や思い出が主役になるよう、UIはできるだけシンプルに。</p>
+            <p>記念日は通知できるようにして、大切な日を忘れにくくしました。</p>
+          </div>
+        </section>
+
+        <section class="story-chapter">
+          <div class="story-number">05 / AFTER</div>
+          <div class="story-copy">
+            <h2>好きなものを、大切にするための場所。</h2>
+            <p>誰かに見せるためではなく、自分があとから見返して嬉しくなる。</p>
+            <p>そんな個人的な記録の価値を大切にしたアプリです。</p>
+          </div>
+        </section>
+
+      <section class="story-cta">
+        <div>
+          <strong>My Treasure</strong>
+          <p>アプリの詳細はApp Storeで確認できます。</p>
+        </div>
+
+        <a
+          class="store-button"
+          href="https://apps.apple.com/us/app/myfavorite/id6787602927"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="apple"></span>
+          <span>
+            <small>View on the</small>
+            <strong>App Store</strong>
+          </span>
+        </a>
+      </section>
+
+    </div>
+
+    <nav class="story-next">
+      <a href="myhealth.html">← Previous Story</a>
+      <a href="../index.html#apps">All Apps</a>
+      <a href="mysong.html">Next Story →</a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="../index.html">
+      <span class="brand-mark">✦</span>
+      <span>My Raku Apps</span>
+    </a>
+
+    <div class="footer-links">
+      <a href="../index.html#apps">Apps</a>
+      <a href="../index.html#profile">Profile</a>
+      <a href="../index.html#links">Links</a>
+      <a href="../privacy.html">Privacy</a>
+    </div>
+
+    <p>© <span id="year"></span> All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
