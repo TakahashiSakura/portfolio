@@ -1,13 +1,10 @@
 const menuButton = document.getElementById("menuButton");
 const nav = document.getElementById("nav");
 
-// ==============================
 // Mobile Menu
-// ==============================
 if (menuButton && nav) {
   menuButton.addEventListener("click", () => {
     const isOpen = nav.classList.toggle("open");
-
     menuButton.classList.toggle("open", isOpen);
     menuButton.setAttribute("aria-expanded", String(isOpen));
   });
@@ -33,86 +30,70 @@ if (menuButton && nav) {
   });
 }
 
-// ==============================
 // Current Year
-// ==============================
 const year = document.getElementById("year");
-
 if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-// ==============================
 // Header Scroll Effect
-// ==============================
-const header = document.querySelector(".header");
+const header = document.querySelector(".header, .story-header");
 
 function updateHeader() {
   if (!header) return;
-
   header.classList.toggle("scrolled", window.scrollY > 30);
 }
 
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
 
-// ==============================
 // Scroll Reveal
-// ==============================
 const revealTargets = document.querySelectorAll(
-  ".section-heading, .app-card, .profile-card, .social-card, .support-panel"
+  ".section-heading, .app-card, .profile-card, .social-card, .support-panel, .story-chapter, .story-visual, .story-cta"
 );
 
 revealTargets.forEach(element => {
   element.classList.add("reveal");
 });
 
-const revealObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  {
-    threshold: 0.12
-  }
-);
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
 
-revealTargets.forEach(element => {
-  revealObserver.observe(element);
-});
+  revealTargets.forEach(element => revealObserver.observe(element));
+} else {
+  revealTargets.forEach(element => element.classList.add("show"));
+}
 
-// ==============================
-// App Card Stagger
-// ==============================
+// Stagger
 document.querySelectorAll(".app-card").forEach((card, index) => {
   card.style.setProperty("--delay", `${index * 80}ms`);
 });
 
-// ==============================
-// Social Card Stagger
-// ==============================
 document.querySelectorAll(".social-card").forEach((card, index) => {
   card.style.setProperty("--delay", `${index * 70}ms`);
 });
 
-// ==============================
 // Hero Floating Effect
-// ==============================
 const heroArt = document.querySelector(".hero-art");
 
 if (heroArt && window.matchMedia("(pointer: fine)").matches) {
   heroArt.addEventListener("mousemove", event => {
     const rect = heroArt.getBoundingClientRect();
-
     const x = (event.clientX - rect.left) / rect.width - 0.5;
     const y = (event.clientY - rect.top) / rect.height - 0.5;
 
-    heroArt.style.setProperty("--mouse-x", `${x * 10}px`);
-    heroArt.style.setProperty("--mouse-y", `${y * 10}px`);
+    heroArt.style.setProperty("--mouse-x", `${x * 8}px`);
+    heroArt.style.setProperty("--mouse-y", `${y * 8}px`);
   });
 
   heroArt.addEventListener("mouseleave", () => {
