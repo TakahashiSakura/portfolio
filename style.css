@@ -177,9 +177,38 @@ code { background: #fff; padding: .18em .4em; border-radius: 6px; }
 .section-heading p { margin:0; color:var(--muted); }
 
 .app-grid {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:22px;
+  display: grid;
+
+  /* 2段にする */
+  grid-template-rows: repeat(2, auto);
+
+  /* 横方向に追加していく */
+  grid-auto-flow: column;
+
+  /* カード幅 */
+  grid-auto-columns: 360px;
+
+  gap: 22px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 12px 4px 30px;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;
+}
+
+.app-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.app-card {
+  scroll-snap-align: start;
 }
 .app-card {
   min-height: 390px;
@@ -347,7 +376,7 @@ code { background: #fff; padding: .18em .4em; border-radius: 6px; }
   .hero-art { height:470px; }
   .section-heading { display:block; }
   .section-heading .eyebrow { width:auto; }
-  .app-grid { grid-template-columns:1fr; }
+
   .profile-card { grid-template-columns:1fr; padding:34px; }
   .profile-monogram { width:120px; height:120px; border-radius:34px; font-size:48px; }
   .link-grid { grid-template-columns:1fr; }
@@ -358,22 +387,89 @@ code { background: #fff; padding: .18em .4em; border-radius: 6px; }
 }
 
 @media (max-width: 560px) {
-  .section { width:min(calc(100% - 28px),var(--max)); padding:78px 0; }
-  .header { width:calc(100% - 20px); padding:0 16px; top:8px; }
-  .hero { padding-top:54px; }
-  .hero p { font-size:15px; }
-  .hero-actions { flex-direction:column; }
-  .button { width:100%; }
-  .hero-art { height:405px; border-radius:30px; }
-  .phone-card { width:210px; padding:14px; border-radius:20px; }
-  .phone-card-a { left:16px; top:48px; }
-  .phone-card-b { right:10px; top:168px; }
-  .phone-card-c { left:28px; bottom:36px; }
-  .hero-word { font-size:56px; }
-  .app-card { padding:24px; border-radius:28px; }
-  .profile-card { padding:28px; border-radius:30px; }
-  .support-panel { padding:30px; border-radius:28px; }
-  .policy-card { padding:26px; border-radius:26px; }
+  .section {
+    width: min(calc(100% - 28px), var(--max));
+    padding: 78px 0;
+  }
+
+  .header {
+    width: calc(100% - 20px);
+    padding: 0 16px;
+    top: 8px;
+  }
+
+  .hero {
+    padding-top: 54px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-art {
+    height: 405px;
+    border-radius: 30px;
+  }
+
+  .phone-card {
+    width: 210px;
+    padding: 14px;
+    border-radius: 20px;
+  }
+
+  .phone-card-a {
+    left: 16px;
+    top: 48px;
+  }
+
+  .phone-card-b {
+    right: 10px;
+    top: 168px;
+  }
+
+  .phone-card-c {
+    left: 28px;
+    bottom: 36px;
+  }
+
+  .hero-word {
+    font-size: 56px;
+  }
+
+  /* Apps */
+  .app-grid {
+    grid-template-rows: 1fr;
+    grid-auto-columns: 86%;
+    gap: 16px;
+  }
+
+  .app-card {
+    padding: 24px;
+    border-radius: 28px;
+  }
+
+  .profile-card {
+    padding: 28px;
+    border-radius: 30px;
+  }
+
+  .support-panel {
+    padding: 30px;
+    border-radius: 28px;
+  }
+
+  .policy-card {
+    padding: 26px;
+    border-radius: 26px;
+  }
 }
 /* =========================================================
    BEHIND THE APP
