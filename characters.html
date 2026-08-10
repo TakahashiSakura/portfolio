@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Characters — My Raku Apps</title>
+
+  <meta
+    name="description"
+    content="My Raku Appsのアプリを紹介するペンギンとキリンのキャラクターを紹介します。"
+  >
+
+  <meta name="theme-color" content="#fff8f6">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <div class="site-shell">
+
+    <!-- HEADER -->
+    <header class="header">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="My Raku Apps ホーム"
+      >
+        <span class="brand-mark">✦</span>
+        <span>My Raku Apps</span>
+      </a>
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+
+      <nav class="nav" id="nav">
+        <a href="index.html#apps">Apps</a>
+        <a href="characters.html">Characters</a>
+        <a href="index.html#profile">Profile</a>
+        <a href="index.html#links">Links</a>
+        <a href="index.html#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+
+    </header>
+
+
+    <main>
+
+      <!-- HERO -->
+      <section class="character-page-hero">
+
+        <span class="eyebrow">CHARACTERS</span>
+
+        <h1>
+          My Raku Appsを<br>
+          <span>紹介するふたり。</span>
+        </h1>
+
+        <p>
+          アプリの使い方や新しい機能などを、
+          SNSを中心に紹介していくキャラクターです。
+        </p>
+
+      </section>
+
+
+      <!-- CHARACTERS -->
+      <section class="character-page-list">
+
+        <!-- Penguin -->
+        <article class="character-profile character-penguin">
+
+          <div class="character-profile-image">
+            <div class="character-image-bg penguin-bg"></div>
+
+            <img
+              src="assets/penguin.png"
+              alt="ペンギンのキャラクター"
+            >
+          </div>
+
+
+          <div class="character-profile-copy">
+
+            <span class="character-number">
+              CHARACTER 01
+            </span>
+
+            <h2>Penguin</h2>
+
+            <p class="character-role">
+              My Raku Apps Character
+            </p>
+
+            <p>
+              My Raku Appsのアプリや機能を紹介する
+              ペンギンのキャラクター。
+            </p>
+
+            <div class="character-tags">
+              <span>Penguin</span>
+              <span>My Raku Apps</span>
+              <span>App Guide</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Giraffe -->
+        <article class="character-profile character-giraffe">
+
+          <div class="character-profile-copy">
+
+            <span class="character-number">
+              CHARACTER 02
+            </span>
+
+            <h2>Giraffe</h2>
+
+            <p class="character-role">
+              My Raku Apps Character
+            </p>
+
+            <p>
+              ペンギンと一緒に、
+              アプリの魅力や便利な使い方を紹介する
+              キリンのキャラクター。
+            </p>
+
+            <div class="character-tags">
+              <span>Giraffe</span>
+              <span>My Raku Apps</span>
+              <span>App Guide</span>
+            </div>
+
+          </div>
+
+
+          <div class="character-profile-image">
+            <div class="character-image-bg giraffe-bg"></div>
+
+            <img
+              src="assets/giraffe.png"
+              alt="キリンのキャラクター"
+            >
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- BACK -->
+      <section class="character-page-footer">
+
+        <p>
+          ふたりと一緒に、My Raku Appsのアプリを紹介していきます。
+        </p>
+
+        <a class="button primary" href="index.html#apps">
+          アプリを見る
+        </a>
+
+      </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark">✦</span>
+        <span>My Raku Apps</span>
+      </a>
+
+      <div class="footer-links">
+        <a href="index.html#apps">Apps</a>
+        <a href="characters.html">Characters</a>
+        <a href="index.html#support">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+
+      <p>
+        © <span id="year"></span> My Raku Apps. All rights reserved.
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
