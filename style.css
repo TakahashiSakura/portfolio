@@ -2130,3 +2130,10 @@ body {
   }
 
 }
+/* キャラクター画像完成までの仮表示 */
+.character-temp-icon {
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+  line-height: 1;
+}
