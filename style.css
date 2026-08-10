@@ -803,3 +803,650 @@ code { background: #fff; padding: .18em .4em; border-radius: 6px; }
     transition: none;
   }
 }
+
+/* ========================================
+   My Raku Apps
+   Color / Texture Upgrade
+======================================== */
+
+
+/* ---------- 全体背景 ---------- */
+
+body {
+  background:
+    radial-gradient(
+      circle at 8% 8%,
+      rgba(255, 200, 211, 0.38),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 88% 18%,
+      rgba(220, 211, 255, 0.35),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 58%,
+      rgba(255, 225, 205, 0.25),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(205, 231, 255, 0.24),
+      transparent 28%
+    ),
+    #fffafa;
+
+  color: #2f292b;
+}
+
+
+/* ---------- ヘッダー ---------- */
+
+.header {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.90),
+      rgba(255, 248, 250, 0.82)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 12px 36px rgba(106, 72, 83, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  backdrop-filter: blur(22px);
+}
+
+
+/* ---------- ロゴ ---------- */
+
+.brand-mark {
+  background:
+    linear-gradient(
+      145deg,
+      #ed8fa3,
+      #cc6882
+    );
+
+  box-shadow:
+    0 7px 18px rgba(205, 104, 130, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+
+/* ---------- ナビ ---------- */
+
+.nav a {
+  position: relative;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.nav a:hover {
+  color: #c15773;
+  transform: translateY(-1px);
+}
+
+.nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #e8879d,
+      #a985c3
+    );
+
+  border-radius: 999px;
+
+  transform: translateX(-50%);
+
+  transition: width 0.2s ease;
+}
+
+.nav a:hover::after {
+  width: 70%;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero-copy .eyebrow {
+  color: #c4506d;
+}
+
+.hero h1 {
+  text-shadow:
+    0 2px 16px rgba(97, 67, 77, 0.04);
+}
+
+.hero h1 span {
+  background:
+    linear-gradient(
+      90deg,
+      #c64e6d 0%,
+      #b35c88 45%,
+      #8973b5 100%
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* ---------- HERO右側 ---------- */
+
+.hero-art {
+  background:
+    radial-gradient(
+      circle at 75% 23%,
+      rgba(244, 180, 196, 0.38),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 24% 73%,
+      rgba(185, 195, 248, 0.34),
+      transparent 27%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.84),
+      rgba(255, 244, 248, 0.62)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 30px 80px rgba(103, 73, 83, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.96);
+}
+
+
+/* ---------- 浮いているアプリ ---------- */
+
+.phone-card {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(255, 250, 251, 0.90)
+    );
+
+  border:
+    1px solid rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 22px 50px rgba(77, 56, 64, 0.13),
+    0 5px 14px rgba(77, 56, 64, 0.05);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.phone-card:hover {
+  box-shadow:
+    0 28px 65px rgba(77, 56, 64, 0.18);
+
+  z-index: 2;
+}
+
+
+/* それぞれ少し色を変える */
+
+.phone-card-a .mini-icon {
+  background:
+    linear-gradient(
+      145deg,
+      #ffd7df,
+      #f5becb
+    );
+
+  color: #c85e78;
+}
+
+.phone-card-b .mini-icon {
+  background:
+    linear-gradient(
+      145deg,
+      #dff4e9,
+      #bfe8d5
+    );
+
+  color: #408f73;
+}
+
+.phone-card-c .mini-icon {
+  background:
+    linear-gradient(
+      145deg,
+      #eee1ff,
+      #dbc8f3
+    );
+
+  color: #8860ae;
+}
+
+
+/* ---------- メインボタン ---------- */
+
+.button.primary {
+  background:
+    linear-gradient(
+      135deg,
+      #33292c,
+      #49383e
+    );
+
+  box-shadow:
+    0 12px 28px rgba(56, 42, 47, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button.primary:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 17px 34px rgba(56, 42, 47, 0.27);
+}
+
+
+.button.secondary {
+  background:
+    rgba(255, 255, 255, 0.74);
+
+  border:
+    1px solid rgba(105, 77, 86, 0.12);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+
+/* ========================================
+   APP CARD
+======================================== */
+
+.app-card {
+  position: relative;
+  overflow: hidden;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 20px 55px rgba(77, 57, 65, 0.08);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* 上側に淡い光 */
+
+.app-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 230px;
+  height: 230px;
+
+  top: -140px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  opacity: 0.38;
+
+  pointer-events: none;
+}
+
+
+/* MyDegu */
+
+.app-card:nth-child(1) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.93),
+      rgba(255, 239, 234, 0.74)
+    );
+}
+
+.app-card:nth-child(1)::before {
+  background: #ffc7bd;
+}
+
+
+/* My Health */
+
+.app-card:nth-child(2) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.93),
+      rgba(237, 244, 255, 0.80)
+    );
+}
+
+.app-card:nth-child(2)::before {
+  background: #bcd3ff;
+}
+
+
+/* My Treasure */
+
+.app-card:nth-child(3) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.93),
+      rgba(246, 238, 255, 0.82)
+    );
+}
+
+.app-card:nth-child(3)::before {
+  background: #dbc2f5;
+}
+
+
+/* My Song */
+
+.app-card:nth-child(4) {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.93),
+      rgba(234, 249, 243, 0.82)
+    );
+}
+
+.app-card:nth-child(4)::before {
+  background: #b9e8d5;
+}
+
+
+/* ホバー */
+
+.app-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 30px 70px rgba(77, 57, 65, 0.13);
+}
+
+
+/* ---------- App Icons ---------- */
+
+.app-icon {
+  position: relative;
+
+  box-shadow:
+    0 10px 24px rgba(76, 57, 62, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+
+.app-icon.peach {
+  background:
+    linear-gradient(
+      145deg,
+      #ffd0c5,
+      #ffbfc9
+    );
+}
+
+
+.app-icon.blue {
+  background:
+    linear-gradient(
+      145deg,
+      #d7e8ff,
+      #b9d0ff
+    );
+}
+
+
+.app-icon.lilac {
+  background:
+    linear-gradient(
+      145deg,
+      #eee1ff,
+      #d7c3f0
+    );
+}
+
+
+.app-icon.mint {
+  background:
+    linear-gradient(
+      145deg,
+      #d9f5e9,
+      #bbe5d4
+    );
+}
+
+
+/* ---------- iOS badge ---------- */
+
+.status {
+  background:
+    rgba(255, 255, 255, 0.68);
+
+  border:
+    1px solid rgba(92, 69, 77, 0.10);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+
+/* ---------- Tags ---------- */
+
+.tags span {
+  background:
+    rgba(255, 255, 255, 0.66);
+
+  border:
+    1px solid rgba(90, 67, 75, 0.08);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* ---------- App Store ---------- */
+
+.store-button {
+  background:
+    linear-gradient(
+      135deg,
+      #181415,
+      #322a2c
+    );
+
+  box-shadow:
+    0 10px 22px rgba(39, 29, 32, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.store-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 28px rgba(39, 29, 32, 0.23);
+}
+
+
+/* ========================================
+   PROFILE
+======================================== */
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 202, 214, 0.58),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 88% 80%,
+      rgba(204, 201, 255, 0.50),
+      transparent 34%
+    ),
+    linear-gradient(
+      135deg,
+      #fff5f6,
+      #f5f1ff
+    );
+
+  box-shadow:
+    0 25px 65px rgba(83, 60, 70, 0.10);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.95);
+}
+
+
+.profile-monogram {
+  background:
+    linear-gradient(
+      145deg,
+      #e98096,
+      #9b75b3
+    );
+
+  box-shadow:
+    0 20px 45px rgba(130, 88, 118, 0.25);
+}
+
+
+/* ========================================
+   SOCIAL CARDS
+======================================== */
+
+.social-card {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.88),
+      rgba(255, 247, 249, 0.72)
+    );
+
+  box-shadow:
+    0 16px 45px rgba(75, 55, 63, 0.08);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.92);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 23px 52px rgba(75, 55, 63, 0.13);
+}
+
+
+.social-mark {
+  background:
+    linear-gradient(
+      145deg,
+      #44383b,
+      #292124
+    );
+
+  box-shadow:
+    0 8px 18px rgba(49, 39, 42, 0.16);
+}
+
+
+/* ========================================
+   SUPPORT
+======================================== */
+
+.support-panel {
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(218, 165, 186, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #2d2528,
+      #49363d
+    );
+
+  box-shadow:
+    0 28px 70px rgba(55, 39, 45, 0.18);
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-heading h2 {
+  position: relative;
+}
+
+.section-heading h2::after {
+  content: "";
+
+  display: block;
+
+  width: 44px;
+  height: 4px;
+
+  margin-top: 14px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #e37f96,
+      #9d7ab8
+    );
+}
+
+
+/* ---------- 英字見出し ---------- */
+
+.eyebrow {
+  background:
+    linear-gradient(
+      90deg,
+      #c9506c,
+      #936ba8
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
