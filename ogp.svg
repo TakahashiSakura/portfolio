@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff8f6"/><stop offset="1" stop-color="#eee8ff"/></linearGradient>
+  <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eb94a4"/><stop offset="1" stop-color="#9a7ab7"/></linearGradient>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<circle cx="1060" cy="80" r="240" fill="#f2c3cd" opacity=".42"/>
+<circle cx="130" cy="620" r="270" fill="#cfd7ff" opacity=".38"/>
+<rect x="92" y="105" width="84" height="84" rx="24" fill="url(#mark)"/>
+<text x="134" y="164" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="white">S</text>
+<text x="92" y="286" font-family="Arial, sans-serif" font-size="78" font-weight="700" fill="#30292b">Sakura Apps</text>
+<text x="92" y="356" font-family="Arial, sans-serif" font-size="34" fill="#756d6e">Apps / Design / Creative</text>
+<text x="92" y="456" font-family="Arial, sans-serif" font-size="28" fill="#9a6b76">毎日に、ちょっと使いたくなるアプリを。</text>
+</svg>
