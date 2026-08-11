@@ -118,7 +118,12 @@ if (appGrid) {
     return `
       <article class="app-card ${app.theme}">
         <div class="app-top">
-          <div class="app-icon">${app.icon}</div>
+        <div class="app-icon">
+          <img
+            src="${app.icon}"
+            alt="${app.name} アイコン"
+          >
+        </div>
           <span class="status">iOS</span>
         </div>
 
