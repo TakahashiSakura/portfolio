@@ -1,7 +1,7 @@
 const apps = [
   {
     name: 'Myヘルスノート',
-    icon: '♡',
+    icon: 'Health.png',
     theme: 'health',
     description: '症状、通院記録など、体調に関する情報をひとつにまとめて管理できるヘルスノート。',
     tags: ['Health', 'Record', 'SwiftUI'],
@@ -10,7 +10,7 @@ const apps = [
   },
   {
     name: 'My買い物リスト',
-    icon: '✓',
+    icon: 'BuyList.png',
     theme: 'shopping',
     description: '毎日の買い物を、シンプルに記録・管理するための買い物リストアプリ。',
     tags: ['Shopping', 'List', 'SwiftUI'],
@@ -19,7 +19,7 @@ const apps = [
   },
   {
     name: 'Myメニュー',
-    icon: '♨',
+    icon: 'Menu.png',
     theme: 'menu',
     description: '毎日の献立や食事を考えるときに使える、シンプルなメニュー管理アプリ。',
     tags: ['Food', 'Menu', 'SwiftUI'],
@@ -28,7 +28,7 @@ const apps = [
   },
   {
     name: 'Myタスク',
-    icon: '●',
+    icon: 'Task.png',
     theme: 'task',
     description: 'やることを整理して、毎日のタスクを分かりやすく管理するためのアプリ。',
     tags: ['Task', 'Productivity', 'SwiftUI'],
@@ -37,7 +37,7 @@ const apps = [
   },
   {
     name: 'My Song List',
-    icon: '♪',
+    icon: 'SongList.png',
     theme: 'song',
     description: '歌いたい曲をすっきり記録。状況に合わせて曲を選んでくれる音楽ノート。',
     tags: ['Music', 'List', 'SwiftUI'],
@@ -46,7 +46,7 @@ const apps = [
   },
   {
     name: 'MyStoryIdea',
-    icon: 'W',
+    icon: 'Story.png',
     theme: 'story',
     description: '思いついた物語やアイデアを残して、創作のヒントをストックしていくためのアプリ。',
     tags: ['Story', 'Idea', 'Creative'],
@@ -55,7 +55,7 @@ const apps = [
   },
   {
     name: 'MyDegu',
-    icon: 'D',
+    icon: 'Mydegu.png',
     theme: 'degu',
     description: 'デグーの体重・元気度・通院記録などを、まとめて残せる健康記録アプリ。',
     tags: ['Degu', 'Health', 'Record'],
@@ -64,7 +64,7 @@ const apps = [
   },
   {
     name: 'MyFavorite',
-    icon: '♦',
+    icon: 'Favorite.png',
     theme: 'favorite',
     description: '推しや大切なものの記録を、写真や思い出と一緒に残していくコレクションアプリ。',
     tags: ['Favorite', 'Photos', 'Record'],
@@ -73,7 +73,7 @@ const apps = [
   },
   {
     name: '安値グラフ',
-    icon: '↗',
+    icon: 'MoneyChart.png',
     theme: 'price',
     description: '商品の価格を記録して、いつ・どこで安かったかを分かりやすく確認するためのアプリ。',
     tags: ['Price', 'Chart', 'Shopping'],
