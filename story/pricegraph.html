@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>安値グラフ — My Raku Apps</title>
+
   <meta
     name="description"
-    content="安値グラフを作った理由や、アプリに込めた考えを紹介します。"
+    content="今の価格は本当に安いのか。自分が見た価格を記録して、買い時を判断しやすくするために作った安値グラフ。そのきっかけや考えを紹介します。"
   >
 
   <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body class="story-page">
 
   <header class="story-header">
+
     <a class="brand" href="../index.html">
       <span class="brand-mark">✦</span>
       <span>My Raku Apps</span>
@@ -25,99 +28,278 @@
     <a class="story-back" href="../index.html#apps">
       ← アプリ一覧へ
     </a>
+
   </header>
 
 
   <main>
 
-    <section class="story-hero reveal">
-      <div class="story-kicker">BEHIND THE APP</div>
+    <!-- HERO -->
+    <section class="story-hero">
+
+      <div class="story-kicker">
+        BEHIND THE APP
+      </div>
 
       <h1>
-        安値グラフを<br>
-        <span>作った理由。</span>
+        「安くなったら買おう。」<br>
+        <span>でも、今って本当に安い？</span>
       </h1>
 
       <p class="story-lead">
-        その値段、本当に安い？を分かりやすく。
+        自分が見た価格を記録して、過去の値段と比較する。<br>
+        「今が買い時？」を判断しやすくするための価格記録アプリです。
       </p>
+
     </section>
 
 
-    <section class="story-visual reveal">
-      <div class="story-app-badge">↗</div>
-    </section>
+    <!-- APP ICON -->
+    <section class="story-visual">
 
-
-    <section class="story-content">
-
-      <article class="story-chapter reveal">
-        <div class="story-number">01 / WHY</div>
-
-        <div class="story-copy">
-          <h2>きっかけ</h2>
-          <p>日用品の値段は店や時期によって変わります。でも『前はいくらだったっけ？』は意外と思い出せません。価格を記録して、買い時を判断しやすくするために作りました。</p>
-        </div>
-      </article>
-
-
-      <article class="story-chapter reveal">
-        <div class="story-number">02 / PROBLEM</div>
-
-        <div class="story-copy">
-          <h2>こんな不便を減らしたい</h2>
-          <p>セール表示だけでは、本当に安いのか判断しづらいことがあります。自分が実際に見た価格を残して比較できれば、納得して買いやすくなります。</p>
-
-          <ul class="story-points">
-            <li>商品の価格を記録</li>
-            <li>過去価格と比較</li>
-            <li>グラフで変化を確認</li>
-            <li>買い時の判断をサポート</li>
-          </ul>
-        </div>
-      </article>
-
-
-      <article class="story-chapter reveal">
-        <div class="story-number">03 / IDEA</div>
-
-        <div class="story-copy">
-          <h2>大切にしたこと</h2>
-          <p>細かな家計簿ではなく、価格そのものに注目して、グラフで直感的に確認できるシンプルな仕組みを目指しています。</p>
-
-          <div class="story-idea">
-            <strong>My Raku Apps</strong>
-            <p>
-              大きな問題を解決するというより、
-              日常にある小さな不便をひとつ減らして、
-              少しだけ毎日を楽にすることを目指しています。
-            </p>
-          </div>
-        </div>
-      </article>
-
-
-      <div class="story-cta reveal">
-        <div>
-          <strong>安値グラフ</strong>
-          <p>アプリを使って、毎日を少しだけ楽に。</p>
-        </div>
-
-        <span class="store-button store-button-disabled">
-          <span class="apple"></span>
-          <span>
-            <small>App Store</small>
-            <strong>URL未設定</strong>
-          </span>
-        </span>
+      <div class="story-app-badge">
+        <img
+          src="../MoneyChart.png"
+          alt="安値グラフ アプリアイコン"
+        >
       </div>
 
     </section>
 
 
+    <section class="story-content">
+
+
+      <!-- 01 -->
+      <article class="story-chapter">
+
+        <div class="story-number">
+          01 / THE BEGINNING
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            「安くなったら買おう！」……あれ、前はいくらだったっけ？
+          </h2>
+
+          <p>
+            欲しいものを見つけても、
+            「今はちょっと高いから、安くなったら買おう」
+            と思うことがあります。
+          </p>
+
+          <p>
+            でも、しばらくしてもう一度商品を見ると、
+            「これって前より安いんだっけ？」
+            と分からなくなってしまう。
+          </p>
+
+          <p>
+            過去に見た値段は、
+            意外と覚えていないものです。
+          </p>
+
+          <p>
+            セールになっていても、
+            本当に安くなっているのか分からず、
+            結局いつ買えばいいのか迷ってしまうことがありました。
+          </p>
+
+          <p>
+            だったら、
+            <strong>
+              自分が見た価格を残しておけばいい。
+            </strong>
+          </p>
+
+          <p>
+            そんな小さな疑問から、
+            安値グラフを作り始めました。
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+      <article class="story-chapter">
+
+        <div class="story-number">
+          02 / THE PROBLEM
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            「SALE」だけでは、本当に安いか分からない。
+          </h2>
+
+          <p>
+            商品に「SALE」や「値下げ」と表示されていると、
+            なんとなくお得に感じます。
+          </p>
+
+          <p>
+            でも、
+            普段の価格や以前見た価格を覚えていなければ、
+            本当に今がお得なのか判断するのは難しいものです。
+          </p>
+
+          <p>
+            そこで、
+            自分が実際に見た価格を記録して、
+            過去の価格と比較できるようにしました。
+          </p>
+
+          <ul class="story-points">
+            <li>商品の価格を記録</li>
+            <li>過去の価格と比較</li>
+            <li>グラフで価格の変化を確認</li>
+            <li>買い時の判断をサポート</li>
+          </ul>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+      <article class="story-chapter">
+
+        <div class="story-number">
+          03 / THE IDEA
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            数字の一覧ではなく、グラフで見る。
+          </h2>
+
+          <p>
+            価格をたくさん記録しても、
+            数字が並んでいるだけでは
+            値動きを把握するのに少し時間がかかります。
+          </p>
+
+          <p>
+            そこで、
+            過去に記録した価格を
+            グラフで確認できるようにしました。
+          </p>
+
+          <p>
+            「この前より安い」
+            「最近はこのくらいの価格が多い」
+            といった変化を、
+            できるだけ直感的に確認できます。
+          </p>
+
+          <p>
+            細かな家計管理ではなく、
+            <strong>
+              「この商品はいくらなら買いたいか」を
+              判断するための記録
+            </strong>
+            に絞っています。
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+      <article class="story-chapter">
+
+        <div class="story-number">
+          04 / AFTER
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            少しでもお得に買って、その分を楽しいことへ。
+          </h2>
+
+          <p>
+            数十円、数百円の違いは、
+            ひとつだけ見れば小さなものかもしれません。
+          </p>
+
+          <p>
+            でも、
+            同じものを買うなら
+            少しでも納得できる価格で買えたほうがうれしい。
+          </p>
+
+          <p>
+            無理に節約するためではなく、
+            <strong>
+              できるだけお得に買えるものはお得に買って、
+              浮いたお金を自分の好きなことや
+              楽しいことに使う。
+            </strong>
+          </p>
+
+          <p>
+            安値グラフが、
+            そんな買い物の小さな判断を
+            手助けできるアプリになればうれしいです。
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- CTA -->
+      <div class="story-cta">
+
+        <div>
+
+          <strong>
+            安値グラフ
+          </strong>
+
+          <p>
+            納得できる価格で買って、楽しいことにお金を使おう。
+          </p>
+
+        </div>
+
+
+        <span class="store-button store-button-disabled">
+
+          <span class="apple">
+            
+          </span>
+
+          <span>
+            <small>App Store</small>
+            <strong>URL未設定</strong>
+          </span>
+
+        </span>
+
+      </div>
+
+
+    </section>
+
+
     <div class="story-next">
-      <a href="../index.html#apps">← アプリ一覧に戻る</a>
-      <a href="../index.html">My Raku Apps →</a>
+
+      <a href="../index.html#apps">
+        ← アプリ一覧に戻る
+      </a>
+
+      <a href="../index.html">
+        My Raku Apps →
+      </a>
+
     </div>
 
   </main>
