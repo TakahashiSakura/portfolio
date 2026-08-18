@@ -5,92 +5,412 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>MyDegu Story — My Raku Apps</title>
-  <meta name="description" content="なぜ、デグー専用のアプリを作ったのか。 制作のきっかけや考えたことを紹介します。">
+  <title>MyDegu — My Raku Apps</title>
+
+  <meta
+    name="description"
+    content="デグー特有の体調変化や通院記録、日々の思い出を残すために。MyDeguを作ったきっかけや考えを紹介します。"
+  >
+
   <meta name="theme-color" content="#fff8f6">
 
   <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body class="story-page">
 
+  <!-- HEADER -->
   <header class="story-header">
-    <a class="brand" href="../index.html" aria-label="My Raku Apps ホーム">
+
+    <a
+      class="brand"
+      href="../index.html"
+      aria-label="My Raku Apps ホーム"
+    >
       <span class="brand-mark">✦</span>
       <span>My Raku Apps</span>
     </a>
 
-    <a class="story-back" href="../index.html#apps">← Appsへ戻る</a>
+    <a
+      class="story-back"
+      href="../index.html#apps"
+    >
+      ← Appsへ戻る
+    </a>
+
   </header>
 
+
   <main>
+
+    <!-- HERO -->
     <section class="story-hero">
-      <div class="story-kicker">BEHIND THE APP</div>
-      <h1>なぜ、デグー専用のアプリを作ったのか<span>。</span></h1>
-      <p class="story-lead">デグーとの暮らしの中にあった、小さな「記録しづらい」をひとつにまとめるところから始まりました。</p>
+
+      <div class="story-kicker">
+        BEHIND THE APP
+      </div>
+
+      <h1>
+        デグー特有の、<br>
+        <span>小さな体調変化に気づきたい。</span>
+      </h1>
+
+      <p class="story-lead">
+        体重、目、皮膚、歯、尻尾、通院記録。<br>
+        デグーとの暮らしの中にあった
+        小さな「記録しづらい」をひとつにまとめました。
+      </p>
+
     </section>
 
+
+    <!-- APP ICON -->
     <div class="story-visual">
-      <div class="story-app-badge">D</div>
+
+      <div class="story-app-badge">
+        <img
+          src="../Degu.png"
+          alt="MyDegu アプリアイコン"
+        >
+      </div>
+
     </div>
+
 
     <div class="story-content">
 
-        <section class="story-chapter">
-          <div class="story-number">01 / THE BEGINNING</div>
-          <div class="story-copy">
-            <h2>きっかけ</h2>
-            <p>デグーとの暮らしでは、毎日の体重や体調の変化を残しておきたい場面がたくさんあります。</p>
-            <p>でも、体重はメモ、写真は写真アプリ、病院のことは別の場所。あとから振り返るときに、情報がバラバラなのが小さなストレスでした。</p>
-          </div>
-        </section>
 
-        <section class="story-chapter">
-          <div class="story-number">02 / THE PROBLEM</div>
-          <div class="story-copy">
-            <h2>デグーだからこそ、残したいことがある。</h2>
-            <p>一般的なペット記録だけでは、デグーならではの変化を残しきれません。</p>
-            <ul class="story-points">
-              <li>体重や元気度の変化</li>
-              <li>歯の状態</li>
-              <li>尻尾の状態</li>
-              <li>通院・次回受診の記録</li>
-              <li>写真と日々のメモ</li>
-            </ul>
-          </div>
-        </section>
+      <!-- 01 -->
+      <section class="story-chapter">
 
-        <section class="story-chapter">
-          <div class="story-number">03 / THE IDEA</div>
-          <div class="story-copy">
-            <h2>だったら、ひとつにまとめよう。</h2>
-            <p>毎日確認したいことと、病院で振り返りたいことを同じ場所に置く。必要な情報へ迷わずたどり着けることを大切にしました。</p>
-          </div>
-        </section>
-
-        <section class="story-chapter">
-          <div class="story-number">04 / DESIGN</div>
-          <div class="story-copy">
-            <h2>記録すること自体を、負担にしない。</h2>
-            <p>毎日使うものだから、入力項目を詰め込みすぎず、必要なものを見つけやすい画面を目指しています。</p>
-            <p>体重や元気度は、あとから変化を確認できるようにチャートでも見られる設計にしました。</p>
-          </div>
-        </section>
-
-        <section class="story-chapter">
-          <div class="story-number">05 / AFTER</div>
-          <div class="story-copy">
-            <h2>自分のためのアプリから、誰かのためのアプリへ。</h2>
-            <p>最初は、自分が使いやすい記録場所が欲しいというところから始まりました。</p>
-            <p>同じようにデグーと暮らしていて、記録の仕方に困っている人の毎日も少し楽にできたら。そんな思いで公開しています。</p>
-          </div>
-        </section>
-
-      <section class="story-cta">
-        <div>
-          <strong>MyDegu</strong>
-          <p>アプリの詳細はApp Storeで確認できます。</p>
+        <div class="story-number">
+          01 / THE BEGINNING
         </div>
+
+        <div class="story-copy">
+
+          <h2>
+            デグーだからこそ、見ておきたい変化がある。
+          </h2>
+
+          <p>
+            動物には、
+            その動物だからこそ気をつけたい
+            病気や体調の変化があります。
+          </p>
+
+          <p>
+            デグーであれば、
+            尾抜け、真菌症、不正咬合、糖尿病、
+            そして糖尿病に伴ってみられることのある白内障など。
+          </p>
+
+          <p>
+            一緒に暮らしていると、
+            毎日のように目や皮膚、歯、尻尾などを見て、
+            「いつもと変わらないかな」と確認します。
+          </p>
+
+          <p>
+            でも、
+            せっかく毎日見ているのに、
+            <strong>
+              その小さな変化を記録しておける場所がない。
+            </strong>
+          </p>
+
+          <p>
+            「前に見たときはどうだったっけ？」
+            と後から振り返れるようにしたい。
+          </p>
+
+          <p>
+            それが、
+            MyDeguを作ろうと思ったきっかけでした。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 02 -->
+      <section class="story-chapter">
+
+        <div class="story-number">
+          02 / THE IDEA
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            デグーとの暮らしの記録を、ひとつに。
+          </h2>
+
+          <p>
+            毎日の体調だけでなく、
+            病院へ行ったときのことも
+            あとから振り返れるようにしました。
+          </p>
+
+          <p>
+            日々の記録と通院記録が同じ場所にあれば、
+            「最近どう変化していたのか」を
+            まとめて確認できます。
+          </p>
+
+          <ul class="story-points">
+            <li>体重や元気度の変化</li>
+            <li>目・歯・皮膚・尻尾などの記録</li>
+            <li>毎日の写真やメモ</li>
+            <li>通院内容の記録</li>
+            <li>チャートで変化を確認</li>
+          </ul>
+
+          <p>
+            デグーとの暮らしの中で残しておきたいことを、
+            できるだけひとつの場所で
+            振り返れるようにしています。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 03 -->
+      <section class="story-chapter">
+
+        <div class="story-number">
+          03 / CUSTOMIZE
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            「毎日記録しなきゃ」には、したくなかった。
+          </h2>
+
+          <p>
+            健康のための記録だからといって、
+            記録すること自体を
+            義務にはしたくありませんでした。
+          </p>
+
+          <p>
+            毎日体重を測る家庭もあれば、
+            ときどき測る家庭もある。
+          </p>
+
+          <p>
+            部屋んぽの時間やごはんのあげ方、
+            日々確認していることも、
+            家庭によって違います。
+          </p>
+
+          <p>
+            そして、
+            何を心地よく感じるのか、
+            どんな暮らしが合っているのかも、
+            デグーによってそれぞれです。
+          </p>
+
+          <p>
+            だから、
+            <strong>
+              「全部記録する」のではなく、
+              自分が残しておきたいことだけを記録できるように。
+            </strong>
+          </p>
+
+          <p>
+            必要な入力項目を選べるようにして、
+            それぞれの暮らし方に合わせて
+            使えるようにしました。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 04 -->
+      <section class="story-chapter">
+
+        <div class="story-number">
+          04 / MEMORY
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            虹の橋を渡ったあとも、思い出はそのままに。
+          </h2>
+
+          <p>
+            ずっと一緒に暮らしていれば、
+            いつかお別れの日がやってきます。
+          </p>
+
+          <p>
+            でも、
+            その日を境に、
+            それまで残してきた記録が
+            必要なくなるわけではありません。
+          </p>
+
+          <p>
+            毎日の写真も、
+            体重の記録も、
+            病院へ行った日のことも、
+            一緒に過ごした時間のひとつです。
+          </p>
+
+          <p>
+            そこでMyDeguでは、
+            虹の橋を渡った子の記録を
+            消してしまうのではなく、
+            <strong>
+              大切な思い出として残しておける場所
+            </strong>
+            を用意しました。
+          </p>
+
+          <p>
+            そして、
+            ふと思い出したときには、
+            その子へ言葉を残すこともできます。
+          </p>
+
+          <p>
+            健康を記録するだけではなく、
+            一緒に暮らした時間そのものを
+            大切に残せるアプリにしたいと思っています。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 05 -->
+      <section class="story-chapter">
+
+        <div class="story-number">
+          05 / DESIGN
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            毎日の中で、無理なく続けられるように。
+          </h2>
+
+          <p>
+            記録する項目が多すぎたり、
+            毎回たくさん入力しなければならなかったりすると、
+            記録することそのものが負担になってしまいます。
+          </p>
+
+          <p>
+            だから、
+            必要な項目へできるだけ早くたどり着けて、
+            残したいものだけを気軽に記録できることを
+            大切にしました。
+          </p>
+
+          <p>
+            体重や元気度などは、
+            あとから変化に気づきやすいよう、
+            チャートでも振り返ることができます。
+          </p>
+
+          <p>
+            <strong>
+              デグーと過ごす時間を、
+              記録のための時間にしすぎないこと。
+            </strong>
+          </p>
+
+          <p>
+            それも、
+            MyDeguで大切にしていることのひとつです。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- 06 -->
+      <section class="story-chapter">
+
+        <div class="story-number">
+          06 / AFTER
+        </div>
+
+        <div class="story-copy">
+
+          <h2>
+            自分のためのアプリから、誰かのためのアプリへ。
+          </h2>
+
+          <p>
+            最初は、
+            自分がデグーと暮らす中で
+            使いやすい記録場所が欲しい。
+          </p>
+
+          <p>
+            そんな個人的な理由から始まったアプリでした。
+          </p>
+
+          <p>
+            でも、
+            同じようにデグーと暮らしていて、
+            「どこに記録しておこう」
+            「前はどうだったっけ」
+            と困っている人もいるかもしれません。
+          </p>
+
+          <p>
+            <strong>
+              デグーとの毎日を大切にしながら、
+              記録にかかる手間を少しだけ減らす。
+            </strong>
+          </p>
+
+          <p>
+            MyDeguが、
+            デグーと暮らす誰かの毎日も
+            少し楽にできたら。
+          </p>
+
+          <p>
+            そんな思いで公開しています。
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- APP STORE -->
+      <section class="story-cta">
+
+        <div>
+
+          <strong>
+            MyDegu
+          </strong>
+
+          <p>
+            デグーとの毎日と、小さな変化を大切に残す。
+          </p>
+
+        </div>
+
 
         <a
           class="store-button"
@@ -98,25 +418,49 @@
           target="_blank"
           rel="noopener noreferrer"
         >
+
           <span class="apple"></span>
+
           <span>
             <small>View on the</small>
             <strong>App Store</strong>
           </span>
+
         </a>
+
       </section>
+
 
     </div>
 
+
+    <!-- NEXT -->
     <nav class="story-next">
-      <a href="mysong.html">← Previous Story</a>
-      <a href="../index.html#apps">All Apps</a>
-      <a href="myhealth.html">Next Story →</a>
+
+      <a href="mysong.html">
+        ← Previous Story
+      </a>
+
+      <a href="../index.html#apps">
+        All Apps
+      </a>
+
+      <a href="myhealth.html">
+        Next Story →
+      </a>
+
     </nav>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <a class="brand footer-brand" href="../index.html">
+
+    <a
+      class="brand footer-brand"
+      href="../index.html"
+    >
       <span class="brand-mark">✦</span>
       <span>My Raku Apps</span>
     </a>
@@ -128,9 +472,14 @@
       <a href="../privacy.html">Privacy</a>
     </div>
 
-    <p>© <span id="year"></span> All rights reserved.</p>
+    <p>
+      © <span id="year"></span> All rights reserved.
+    </p>
+
   </footer>
 
+
   <script src="../script.js"></script>
+
 </body>
 </html>
